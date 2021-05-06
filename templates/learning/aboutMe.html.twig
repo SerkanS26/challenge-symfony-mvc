@@ -1,0 +1,23 @@
+
+
+{% extends 'base.html.twig' %}
+
+{% block title %}About Me page{% endblock %}
+
+
+{% block body %}
+    <a href= "{{ path('homePage') }}">Home Page</a>
+
+    <h2>Your Name: {{name}}!</h2>
+  <p>
+      Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen.
+      Lorem Ipsum is de standaard proeftekst
+      in deze bedrijfstak sinds de 16e eeuw, toen een onbekende drukker een
+  </p>
+    <form method="post" action="{{ path('homePage') }}">
+        <input type="submit" name="forgetMe" value="Forget Me">
+    </form>
+
+{% endblock %}
+
+

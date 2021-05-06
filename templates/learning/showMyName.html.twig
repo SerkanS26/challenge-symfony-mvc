@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Show my name page{% endblock %}
+
+
+{% block body %}
+    <a href= "{{ path('about-me') }}">About Me</a>
+    <h1>Hello,</h1>
+    <h2>Your Name: {{name}}!</h2>
+
+    <form method="post" action="{{ path('change-my-name') }}">
+        <input placeholder="Your Name" name="inputName">
+        <button type="submit">submit</button>
+    </form>
+{% endblock %}
